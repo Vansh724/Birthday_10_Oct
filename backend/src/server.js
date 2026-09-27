@@ -11,7 +11,8 @@ const testNotificationRoutes = require('./routes/test-notification');
 const schedulerRoutes = require('./routes/scheduler');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; add: app.set('trust proxy', 1);
+
 
 // Only the frontend origin(s) listed here may call this API from a browser.
 // Comma-separated in .env so you can list both localhost and your deployed

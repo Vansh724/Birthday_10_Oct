@@ -14,5 +14,5 @@ const CONFIG = {
   VAPID_PUBLIC_KEY: 'BCqxS9x0Bk15_jeUnVlOK19ieXFcSTRcko9GZmhK-XbW5pBkjP4C_inGWJDeAxMPY96rXdJ4j_0mkykFC_wSBJ0',
   // Update this once your backend is deployed (Stage 8) — e.g.
   // 'https://your-app.onrender.com'. Keep it as localhost until then.
-  API_BASE_URL: 'http://localhost:3000',
+  API_BASE_URL: 'http://localhost:3000https://tenth-of-october.onrender.com',
 };

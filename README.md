@@ -5,7 +5,7 @@ and then receives one message a day until her birthday on 10 October 2026.
 
 This README grows as we build each stage.
 
-## Where things stand
+## Where things stand tall
 
 - [x] Stage 1 — Frontend landing/countdown experience
 - [x] Stage 2 — Service worker + notification permission + push subscription

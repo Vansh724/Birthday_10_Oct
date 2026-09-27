@@ -1,0 +1,222 @@
+:root {
+  --bg-0: #080914;
+  --bg-1: #101225;
+  --bg-2: #171a32;
+  --accent: #b8a4ff;
+  --accent-soft: rgba(184, 164, 255, 0.35);
+  --pink: #ffb6d9;
+  --text: #f8f7ff;
+  --text-muted: #a7a6b8;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(120% 120% at 50% 0%, var(--bg-2) 0%, var(--bg-1) 45%, var(--bg-0) 100%);
+  color: var(--text);
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vh 6vw;
+}
+
+.scene {
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.scene.hidden {
+  display: none;
+}
+
+.scene.fade-out {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+/* Scene 1: hero lines */
+.hero-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.hero-line {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  margin: 0;
+}
+
+.hero-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-line:first-child {
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+/* Scene 2: countdown */
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  color: var(--text-muted);
+  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.8rem, 3vw, 2rem);
+  margin-bottom: 3rem;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+}
+
+.countdown-number {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 8vw, 3.6rem);
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--text) 0%, var(--accent-soft) 140%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.countdown-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.continue-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.2rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.continue-btn:hover, .continue-btn:focus-visible {
+  opacity: 1;
+  transform: translateY(4px);
+}
+
+.continue-line {
+  display: block;
+  width: 1px;
+  height: 28px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
+  animation: pulse-line 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Scene 3: explanation */
+.explain-line {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 4.5vw, 2.2rem);
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.explain-sub {
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 2.8rem;
+}
+
+.primary-btn {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  color: var(--bg-0);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--pink) 100%);
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 2.4rem;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 var(--accent-soft);
+  transition: box-shadow 0.4s ease, transform 0.25s ease;
+}
+
+.primary-btn:hover, .primary-btn:focus-visible {
+  box-shadow: 0 0 32px 4px var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.spark {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+.permission-status {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Focus visibility for accessibility */
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown { gap: 0.7rem; }
+  .countdown-unit { min-width: 54px; }
+}

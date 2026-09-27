@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday, Dhruvi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/day.css" />
+<link rel="stylesheet" href="../css/birthday.css" />
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="bday-hero">
+    <div class="bday-glow" aria-hidden="true"></div>
+    <h1 class="bday-hero-line" id="hero-line"></h1>
+    <div class="bday-scroll-cue" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main class="bday-main">
+
+    <section class="bday-section" data-reveal>
+      <h2 class="bday-section-title">From me, to you</h2>
+      <div class="bday-message" id="bday-message"></div>
+    </section>
+
+    <section class="bday-section" data-reveal>
+      <h2 class="bday-section-title">A few memories</h2>
+      <div class="gallery-grid bday-photos" id="bday-photos"></div>
+    </section>
+
+    <section class="bday-section" data-reveal>
+      <h2 class="bday-section-title">Our story</h2>
+      <div class="timeline bday-timeline" id="bday-timeline"></div>
+    </section>
+
+    <section class="bday-section" data-reveal>
+      <h2 class="bday-section-title">The soundtrack</h2>
+      <div class="bday-songs" id="bday-songs"></div>
+    </section>
+
+    <section class="bday-section" data-reveal>
+      <h2 class="bday-section-title">Just us</h2>
+      <div class="bday-jokes" id="bday-jokes"></div>
+    </section>
+
+    <section class="bday-section bday-final" data-reveal>
+      <button class="primary-btn" id="final-surprise-btn"></button>
+      <p class="bday-final-message hidden" id="final-surprise-message"></p>
+    </section>
+
+  </main>
+
+  <script src="../js/particles.js"></script>
+  <script src="../js/birthday-content.js"></script>
+  <script src="../js/birthday.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+/* Shared shell for every /day/N page */
+
+.day-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 6vw 6vh;
+  position: relative;
+  z-index: 1;
+}
+
+.day-back {
+  position: fixed;
+  top: 1.6rem;
+  left: 1.6rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  transition: opacity 0.25s ease;
+}
+
+.day-back:hover, .day-back:focus-visible {
+  opacity: 1;
+}
+
+.day-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--accent);
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.day-content {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.day-body, .day-intro, .day-prompt, .day-caption, .day-riddle {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+}
+
+.day-riddle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--pink);
+}
+
+.hidden { display: none; }
+
+/* --- Memory flip card --- */
+.flip-card {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0.1, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  background: linear-gradient(160deg, rgba(184,164,255,0.12), rgba(255,182,217,0.08));
+  border: 1px solid rgba(184,164,255,0.25);
+}
+
+.flip-front { font-size: 2.4rem; color: var(--accent); }
+.flip-back {
+  transform: rotateY(180deg);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* --- Choice buttons --- */
+.choice-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.4rem;
+}
+
+.choice-btn {
+  font-family: var(--sans);
+  background: rgba(184,164,255,0.1);
+  border: 1px solid rgba(184,164,255,0.35);
+  color: var(--text);
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.choice-btn:hover:not(:disabled) { background: rgba(184,164,255,0.22); transform: translateY(-2px); }
+.choice-btn:disabled { opacity: 0.5; cursor: default; }
+.choice-selected { border-color: var(--pink); }
+.choice-response { color: var(--text-muted); font-size: 0.98rem; }
+
+/* --- Floating animation --- */
+.floating-orb {
+  width: 90px;
+  height: 90px;
+  margin: 1rem auto 2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, var(--pink), var(--accent) 70%);
+  filter: blur(1px);
+  animation: float 3.4s ease-in-out infinite;
+  box-shadow: 0 0 40px 6px var(--accent-soft);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.05); }
+}
+
+/* --- Hidden reveal --- */
+.reveal-btn {
+  font-family: var(--sans);
+  background: none;
+  border: 1px solid var(--accent-soft);
+  color: var(--accent);
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+.reveal-btn:hover { background: rgba(184,164,255,0.1); }
+.hidden-text { font-family: var(--serif); font-size: 1.2rem; color: var(--text); margin-top: 1rem; }
+
+/* --- Gallery --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.gallery-item { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.gallery-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--accent);
+  background: linear-gradient(160deg, rgba(184,164,255,0.12), rgba(255,182,217,0.06));
+  border: 1px dashed rgba(184,164,255,0.3);
+}
+.gallery-caption { font-size: 0.82rem; color: var(--text-muted); }
+
+/* --- Appreciation list --- */
+.appreciation-list { list-style: none; padding: 0; text-align: left; max-width: 420px; margin: 0 auto; }
+.appreciation-list li {
+  font-family: var(--sans);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(184,164,255,0.12);
+  opacity: 0;
+  animation: fade-in-up 0.6s ease forwards;
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Puzzle --- */
+.puzzle-form { display: flex; gap: 0.6rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
+.puzzle-input {
+  font-family: var(--sans);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(184,164,255,0.3);
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  min-width: 200px;
+}
+.puzzle-check {
+  font-family: var(--sans);
+  background: var(--accent);
+  color: var(--bg-0);
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.puzzle-feedback { color: var(--text-muted); }
+.puzzle-correct { color: var(--pink); }
+
+/* --- Constellation --- */
+.constellation { position: relative; width: 100%; height: 240px; margin-bottom: 1rem; }
+.star {
+  position: absolute;
+  background: none;
+  border: none;
+  color: rgba(248,247,255,0.4);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.star:hover { transform: scale(1.3); }
+.star-lit { color: var(--pink); text-shadow: 0 0 12px var(--pink); }
+.constellation-word { font-family: var(--serif); font-size: 1.3rem; color: var(--accent); min-height: 1.6em; }
+
+/* --- Timeline --- */
+.timeline { text-align: left; max-width: 420px; margin: 0 auto; }
+.timeline-item { display: flex; gap: 1rem; margin-bottom: 1.4rem; }
+.timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-top: 0.4rem; flex-shrink: 0; }
+.timeline-label { font-family: var(--serif); font-size: 1.15rem; color: var(--text); margin: 0 0 0.2rem; }
+.timeline-detail { font-size: 0.92rem; color: var(--text-muted); margin: 0; }
+
+/* --- Music --- */
+.music-card {
+  background: rgba(184,164,255,0.08);
+  border: 1px solid rgba(184,164,255,0.25);
+  border-radius: 16px;
+  padding: 1.6rem;
+}
+.music-title { font-family: var(--serif); font-size: 1.3rem; color: var(--text); margin: 0; }
+.music-artist { color: var(--text-muted); margin: 0.2rem 0 0.8rem; }
+.music-note { color: var(--text); }
+.music-link { display: inline-block; margin-top: 0.8rem; color: var(--accent); text-decoration: underline; }
+
+/* --- Handwritten note --- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+.handwritten-note {
+  font-family: 'Caveat', var(--serif);
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* --- Game --- */
+.game-grid { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.game-item {
+  font-size: 1.8rem;
+  background: rgba(184,164,255,0.08);
+  border: 1px solid rgba(184,164,255,0.25);
+  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.game-item:hover:not(:disabled) { transform: translateY(-3px); }
+.game-item-correct { border-color: var(--pink); }
+.game-item-wrong { animation: shake 0.4s ease; }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+.game-feedback { color: var(--pink); }
+
+/* --- Locked --- */
+.lock-btn {
+  font-family: var(--sans);
+  background: rgba(184,164,255,0.08);
+  border: 1px solid rgba(184,164,255,0.3);
+  color: var(--text);
+  padding: 1rem 1.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.lock-icon { font-size: 1.2rem; }
+.locked-message { font-family: var(--serif); font-size: 1.2rem; margin-top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-orb { animation: none; }
+  .appreciation-list li { animation: none; opacity: 1; }
+}

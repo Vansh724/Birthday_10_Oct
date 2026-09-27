@@ -126,36 +126,46 @@ html, body {
 }
 
 .continue-btn {
-  padding: 1.6rem 1.8rem; /* was 1.2rem, now bigger tap target */
-}
-
-.continue-label {
-  display: block;
-  margin-top: 0.5rem;
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--pink) 100%);
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  opacity: 0.92;
+  box-shadow: 0 0 20px 2px var(--accent-soft);
+  transition: box-shadow 0.4s ease, transform 0.25s ease, opacity 0.3s ease;
+  animation: pulse-glow 2.4s ease-in-out infinite;
 }
 
 .continue-btn:hover, .continue-btn:focus-visible {
   opacity: 1;
-  transform: translateY(4px);
+  transform: translateY(4px) scale(1.04);
+  box-shadow: 0 0 34px 6px var(--accent-soft);
 }
 
 .continue-line {
   display: block;
   width: 1px;
-  height: 28px;
+  height: 20px;
   margin: 0 auto;
-  background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
-  animation: pulse-line 2.4s ease-in-out infinite;
+  background: linear-gradient(180deg, var(--bg-0) 0%, transparent 100%);
+  opacity: 0.6;
 }
 
-@keyframes pulse-line {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
+.continue-label {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bg-0);
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 18px 2px var(--accent-soft); }
+  50% { box-shadow: 0 0 30px 6px var(--accent-soft); }
 }
 
 /* Scene 3: explanation */

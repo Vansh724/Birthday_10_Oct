@@ -16,16 +16,16 @@ const DAY_CONTENT = {
     body: "This is the first of fourteen little pages. Each one unlocks with tomorrow's notification — you don't need to come looking for them. Today's just here to say: it's really started.",
   },
 
-  13: {
+  12: {
     type: 'memory',
-    heading: 'Day 13',
-    prompt: 'Tap the card.',
-    memory: "Replace this with a specific memory — a moment, a place, a thing you said to each other that you still think about.",
+    heading: 'Day 12',
+    prompt: "Tap The Card To Get Today's Message",
+    memory: "Some flowers just have a way of making an ordinary day feel a little more beautiful, So heres one for you, just because you deserve a lil extra beauty today 🌸",
   },
 
-  12: {
+  13: {
     type: 'choice',
-    heading: 'Day 12',
+    heading: 'Day 13',
     question: 'Pick one, honestly:',
     options: [
       { label: 'Coffee', response: "Good — that's what I'd have guessed." },

@@ -277,7 +277,7 @@ now, you trigger sends manually with curl (below) to test the logic.
 3. Restart the backend (`Ctrl+C`, then `npm run dev`) so it picks up the
    new `.env` value.
 
-## Testing the scheduler manually
+## Testing the scheduler manually.
 
 ```bash
 curl -X POST "http://localhost:3000/api/send-daily" \

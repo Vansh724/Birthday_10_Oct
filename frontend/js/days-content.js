@@ -20,7 +20,7 @@ const DAY_CONTENT = {
     type: 'memory',
     heading: 'Day 12',
     prompt: "Tap The Card To Get Today's Message",
-    memory: "Some flowers just have a way of making an ordinary day feel a little more beautiful, So heres one for you, just because you deserve a lil extra beauty today 🌸",
+    memory: "Humre gola par it's a rule to celebrate best friends early! I genuinely loved this message enough to let it go all the way to your planet... Happy 12 days to your birthday!🛸",
   },
 
   13: {

@@ -289,8 +289,7 @@ Since today's real date probably already matches an entry in
 without waiting a full day between attempts, add `?force=true`:
 
 ```bash
-curl -X POST "http://localhost:3000/api/send-daily?force=true" \
-  -H "x-scheduler-secret: YOUR_SCHEDULER_SECRET_HERE"
+
 ```
 
 ## What to test before we move to Stage 6

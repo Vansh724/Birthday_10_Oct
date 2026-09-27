@@ -126,12 +126,17 @@ html, body {
 }
 
 .continue-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 1.2rem;
-  opacity: 0.6;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 1.6rem 1.8rem; /* was 1.2rem, now bigger tap target */
+}
+
+.continue-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .continue-btn:hover, .continue-btn:focus-visible {

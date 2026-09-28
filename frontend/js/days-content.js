@@ -33,7 +33,7 @@ const DAY_CONTENT = {
     ],
   },
 
-  11: {
+  9: {
     type: 'animation',
     heading: 'Day 11',
     caption: "Small thing today. Watch for a second.",
@@ -46,7 +46,7 @@ const DAY_CONTENT = {
     reveal: "Replace this with something you've never actually told her.",
   },
 
-  9: {
+  11: {
     type: 'gallery',
     heading: 'Day 9',
     intro: 'A few snapshots — replace these placeholders with real photos later.',

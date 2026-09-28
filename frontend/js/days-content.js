@@ -48,7 +48,7 @@ const DAY_CONTENT = {
 
   11: {
     type: 'gallery',
-    heading: 'Day 9',
+    heading: 'Day 11',
     intro: 'A few snapshots — replace these placeholders with real photos later.',
     items: [
       { caption: 'Replace with a real memory + photo' },

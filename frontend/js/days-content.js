@@ -79,9 +79,9 @@ const DAY_CONTENT = {
 
   11: {
     type: 'constellation',
-    heading: 'Day 6',
-    intro: 'Tap a star.',
-    words: ['kind', 'funny', 'loyal', 'stubborn (affectionately)', 'brilliant', 'yours'],
+    heading: 'Day 11',
+    intro: 'Every Star Contains a Storyy...Tap To Unlock..',
+    words: ['If you found this one, I guess the universe wanted you to start here', 'funny', 'loyal', 'stubborn (affectionately)', 'brilliant', 'yours'],
   },
 
   5: {

@@ -76,7 +76,9 @@ function renderGallery(content, mount) {
     <div class="gallery-grid">
       ${content.items.map((item) => `
         <div class="gallery-item">
-          <div class="gallery-placeholder">✦</div>
+          ${item.src
+            ? `<img class="gallery-img" src="${escapeHtml(item.src)}" alt="${escapeHtml(item.caption)}" loading="lazy">`
+            : `<div class="gallery-placeholder">✦</div>`}
           <p class="gallery-caption">${escapeHtml(item.caption)}</p>
         </div>
       `).join('')}

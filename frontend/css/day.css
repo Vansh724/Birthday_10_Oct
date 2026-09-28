@@ -176,6 +176,14 @@
   background: linear-gradient(160deg, rgba(184,164,255,0.12), rgba(255,182,217,0.06));
   border: 1px dashed rgba(184,164,255,0.3);
 }
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  border: 1px solid rgba(184,164,255,0.3);
+}
 .gallery-caption { font-size: 0.82rem; color: var(--text-muted); }
 
 /* --- Appreciation list --- */

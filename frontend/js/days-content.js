@@ -35,7 +35,7 @@ const DAY_CONTENT = {
 
   9: {
     type: 'animation',
-    heading: 'Day 11',
+    heading: 'Day 09',
     caption: "Small thing today. Watch for a second.",
   },
 
@@ -51,10 +51,10 @@ const DAY_CONTENT = {
     heading: 'Day 11',
     intro: 'A few snapshots — replace these placeholders with real photos later.',
     items: [
-      { caption: 'Replace with a real memory + photo' },
-      { caption: 'Replace with a real memory + photo' },
-      { caption: 'Replace with a real memory + photo' },
-    ],
+    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Real memory here' },
+    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Another memory' },
+    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'And another' },
+  ],
   },
 
   8: {

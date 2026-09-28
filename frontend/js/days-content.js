@@ -51,9 +51,9 @@ const DAY_CONTENT = {
     heading: 'Day 11',
     intro: 'A few snapshots — replace these placeholders with real photos later.',
     items: [
-    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Real memory here' },
-    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Another memory' },
-    { src: 'C:/Users/khann/Downloads/My_project/My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'And another' },
+    { src: 'My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Real memory here' },
+    { src: 'My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'Another memory' },
+    { src: 'My_Project/images/Screenshot 2026-09-27 145641.png', caption: 'And another' },
   ],
   },
 

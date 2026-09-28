@@ -33,9 +33,9 @@ const DAY_CONTENT = {
     ],
   },
 
-  9: {
+  6: {
     type: 'animation',
-    heading: 'Day 09',
+    heading: 'Day 11',
     caption: "Small thing today. Watch for a second.",
   },
 
@@ -46,9 +46,9 @@ const DAY_CONTENT = {
     reveal: "Replace this with something you've never actually told her.",
   },
 
-  11: {
+  9: {
     type: 'gallery',
-    heading: 'Day 11',
+    heading: 'Day 09',
     intro: 'A few snapshots — replace these placeholders with real photos later.',
     items: [
     { src: 'My_Project/images/day11-1.png', caption: 'Real memory here' },
@@ -77,7 +77,7 @@ const DAY_CONTENT = {
     successMessage: "There it is. You knew it immediately, didn't you.",
   },
 
-  6: {
+  11: {
     type: 'constellation',
     heading: 'Day 6',
     intro: 'Tap a star.',

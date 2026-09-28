@@ -80,8 +80,8 @@ const DAY_CONTENT = {
   11: {
     type: 'constellation',
     heading: 'Day 11',
-    intro: 'Every Star Contains a Storyy...Tap To Unlock..',
-    words: ['A little world for the girl who loved a Palace of Illusions...11 pieces, one 10th, and a little magic in between', 'Six stars..One constellation and somehow, six feels like the right number...I’ll let you figure out why..', 'One hides in your hand, the other shines above; bring them together, and the countdown may make sense...', 'You know why the ducklings follow the frog? A lil mistake… sorry… sorrry… aapka hi joke tha :)) 🐸', 'Jaande Jaande Ek Gal Sundi Jaa...', 'You opened all six, but this constellation was never really about the stars...it was about finding lil pieces of you along the way..'],
+    intro: 'Every Star Contains A Piece Of You...Tap To Unlock...',
+    words: ['Glad to have a friend who loves getting lost in a Palace of Illusions...✨', 'Six stars...One constellation and somehow, six feels like the right number...I’ll let you figure out why..', 'One hides in your hand, the other shines above; bring them together, and the countdown may make sense...', 'You know why the ducklings follow the frog? A lil mistake… sorry… sorrry… aapka hi joke tha :)) 🐸', 'Jaande Jaande Ek Gal Sundi Jaa...', '11 days to go… 🌹 A little closer to your day, a little more magic along the way,and until then, here’s a rose for the girl who deserves a whole garden of them..✨'],
   },
 
   5: {

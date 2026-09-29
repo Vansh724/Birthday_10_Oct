@@ -60,58 +60,58 @@ const DAY_CONTENT = {
 
  10: {
   type: 'appreciation',
-  heading: 'Day 10',
-  intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE FIRST DOOR',
+  heading: 'The Date == Number Of Days Left..',
+  intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE ENTRY DOOR..',
 
   items: [
     {
-      title: '01',
-      message: "Don't get too comfortable...You probably think you've figured out how this works by now...You haven't.. Clue: Add the first three positive whole numbers: 1 + 2 + 3 = ?"
+      title: 'ORBIT',
+      message: "Not sure how someone can jump between making things, reading things, creating content, and teaching machines how to learn… but somehow you make all of that look like a normal Tuesday.😯✨ Clue: I have hands but cannot hold you. I have a face but cannot smile. I keep moving, even when you stand still.🕰️🤔"
     },
 
     {
-      title: '02',
-      message: "Let's make this one easy. You've already passed through numbers that looked random. Maybe they're not. Clue: How many days are there in a week?"
+      title: 'BOOK',
+      message: "There's a certain charm in sending little pieces of yourself out into the world and seeing where they land. A few people here, a few more there… Maybe 153 on one side, 63 on another...That's probably the best part.. ✨📨 Clue: I have a flap but I'm not a bird. I can carry a secret without knowing it. People open me when something important has arrived. 📩🤫"
     },
 
     {
-      title: '03',
-      message: "You're getting better at this. Three was useful for a while. But now let's make it bigger without adding anything new. Clue: Take my number. Multiply it by itself."
+      title: 'THUNDER',
+      message: "Every now and then, I just feel like reminding you how grateful I am to have a good boy as my friend..you may believe it or not but yeahh...🥹🫶🏻✨ Clue: I have no walls, but I have shores. I have no voice, but I make waves. You can never see all of me from one place.🌊🤔"
     },
 
     {
-      title: '04 The First Door..',
-      message: "1 mystery never hurt anyone..Some things are more fun when you don't know where they're going...So let's start somewhere that definitely isn't the beginning. Clue To Next: Think of a stop sign. How many sides does it have ?"
+      title: 'The ENTRY DOOR..',
+      message: "There's something special about people who can turn tiny things into something that didn't exist before..A little thread, a little patience, a little imagination… and suddenly there's something worth keeping..close to your heart...Maybe that's why this one felt like a good place to begin.. 🧶✨🤍 Clue: I stand where land meets water. I don't move, but I guide those who do. When everything around you goes dark, I am the thing people look for. 🌊💡🌙"
     },
 
     {
-      title: '05',
-      message: "Funny how ten little doors can make you look at numbers completely differently. If you've been paying attention, you might want to look back at the first character of every message you've opened. Don't read them as sentences. Read them as pieces. Clue: You're one door away. Take my number and double it."
+      title: 'RAINBOW',
+      message: "If you've made it this far, you might have noticed something strange. These aren't just random cards, and you definitely weren't supposed to find them in numerical order. There may be more hiding here than just the riddles. 👀🧩✨ Clue: I am the smallest positive whole number. I come before two. There is only ___ of me. 🔢☝️"
     },
 
     {
-      title: '06',
-      message: "And now we're getting somewhere. You weren't supposed to find these in numerical order...You were supposed to find them in the right order. Clue: My number has a very simple next step...Take half of me."
+      title: 'CLOCK',
+      message: "Lil things probably give away your personality more than you realise. The things you create, the details you put on your nails, the ideas that suddenly become projects… like some random walking robot...there's always some tiny spark turning into something bigger. 🤖✨ Clue: You may see the flash before you hear me. I have no mouth, but I can shake the sky. I arrive after lightning and leave an echo behind. ⚡🌩️"
     },
 
     {
-      title: '07',
-      message: "Everything you've opened so far has been saying more than it seems. Maybe you've noticed something. Maybe you haven't. Either way, there's only one way forward. Clue: How many letters are there in the word THREE?"
+      title: 'ENVELOPE',
+      message: "There's something about Jaipur that makes colour feel like it belongs everywhere in old walls, bright streets, little details, and probably somewhere in your camera roll too.. Maybe that's why this next one feels appropriate... 🩷🌈✨ Clue: I appear after the rain but never get wet. I have many colours but no paint. You can see me, but you can never reach me. 🌦️🌈👀"
     },
 
     {
-      title: '08',
-      message: "0ne thing I've learnt about puzzles: the obvious answer isn't always the interesting one. You're doing fine. Keep going. Clue: There is exactly one number that is neither prime nor composite."
+      title: 'LIGHTHOUSE',
+      message: "Everyone has their own little world they disappear into sometimes..Yours probably has a book somewhere, a half-finished idea, a new thing you're trying to make, and at least one episode of a sitcom waiting in the background. 📖🧶📺✨ Clue: I am not a circle, but I can look like one. I have no beginning or end. Planets follow me, but I never have to move. 🌍🪐🔄"
     },
 
     {
-      title: '09',
-      message: "Sometimes the answer is much simpler than the question makes it seem. You've made it this far. Don't overthink this one. Clue: How many eyes does a person normally have?"
+      title: 'OCEAN',
+      message: "For someone who effortlessly gets lost in her own thoughts, falls deep into a sitcom, and then somehow finds her way back with another beautiful idea bring to life, I suppose ten mysterious cards aren't the strangest thing to leave you with. Besides, every good story needs a little mystery...Jse hr pyaara mausam needs a company... 🌸✨ Clue: I can take you to places you've never been. I can introduce you to people who never existed. I can be opened without a door. 📖🌍✨"
     },
 
     {
-      title: '10',
-      message: "Take a second. Don't rush this one. Look at the first character of every message, but read them in the order you discovered them. You should have: 1 → 0 → D → A → Y → S → L → E → F → T. Now put the space where it belongs. 10 DAYS LEFT. You weren't opening ten messages. You were assembling one. And if you figured that out before reaching this door... I guess you were paying attention. ✨ Tomorrow: 9."
+      title: '1',
+      message: "Look back at everything you've just opened. Not the card names. Not the riddles. Look at the first character of every message, in the order you discovered them. Then do the same with the answers. You might want to write both down. Last Clue: I represent nothing...I come before one. On a countdown, reaching me means there is nothing left to wait for.."
     }
   ],
 },

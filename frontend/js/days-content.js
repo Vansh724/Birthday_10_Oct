@@ -61,7 +61,7 @@ const DAY_CONTENT = {
  10: {
   type: 'appreciation',
   heading: 'The Date == Number Of Days Left..',
-  intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE ENTRY DOOR..',
+  intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE ENTRY DOOR..and follow the clues',
 
   items: [
     {
@@ -106,7 +106,7 @@ const DAY_CONTENT = {
 
     {
       title: 'OCEAN',
-      message: "For someone who effortlessly gets lost in her own thoughts, falls deep into a sitcom, and then somehow finds her way back with another beautiful idea bring to life, I suppose ten mysterious cards aren't the strangest thing to leave you with. Besides, every good story needs a little mystery...Jse hr pyaara mausam needs a company... 🌸✨ Clue: I can take you to places you've never been. I can introduce you to people who never existed. I can be opened without a door. 📖🌍✨"
+      message: "For someone who effortlessly gets lost in her own thoughts and then somehow finds her way back with another beautiful idea bring to life, I suppose ten mysterious cards aren't the strangest thing to leave you with. Besides, every good story needs a little mystery...Jse hr pyaara mausam needs a company... 🌸✨ Clue: I can take you to places you've never been. I can introduce you to people who never existed. I can be opened without a door. 📖🌍✨"
     },
 
     {

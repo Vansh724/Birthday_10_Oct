@@ -47,15 +47,16 @@ const DAY_CONTENT = {
   },
 
   9: {
-    type: 'gallery',
-    heading: 'Day 09',
-    intro: 'A few snapshots — replace these placeholders with real photos later.',
-    items: [
-    { src: '/images/day09-1.png', caption: 'Real memory here' },
-    { src: '/images/day09-2.png', caption: 'Another memory' },
-    { src: '/images/day09-3.png', caption: 'And another' },
+  type: 'gallery',
+  heading: 'Day 09',
+  intro: 'A few snapshots — replace these placeholders with real photos later.',
+  items: [
+    { src: '../../images/day09-1.png', caption: 'Real memory here' },
+    { src: '../../images/day09-2.png', caption: 'Another memory' },
+    { src: '../../images/day09-3.png', caption: 'And another' },
   ],
-  },
+},
+
 
   8: {
     type: 'appreciation',

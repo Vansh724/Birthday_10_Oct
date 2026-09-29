@@ -60,58 +60,58 @@ const DAY_CONTENT = {
 
  8: {
   type: 'appreciation',
-  heading: '10 little things',
-  intro: 'Some things are meant to be noticed. Some are meant to be discovered.',
+  heading: 'Day 10',
+  intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE FIRST DOOR',
 
   items: [
     {
-      title: 'Something you probably don’t realise',
-      message: 'You have this weird ability to make completely ordinary moments feel memorable.'
+      title: '01',
+      message: "Don't get too comfortable...You probably think you've figured out how this works by now...You haven't.. Clue: Add the first three positive whole numbers: 1 + 2 + 3 = ?"
     },
 
     {
-      title: 'You probably forgot this one',
-      message: 'There are tiny things you’ve said or done that stayed with me much longer than you probably expected.'
+      title: '02',
+      message: "Let's make this one easy. You've already passed through numbers that looked random. Maybe they're not. Clue: How many days are there in a week?"
     },
 
     {
-      title: 'Three words',
-      message: 'Sorry. Thank you. Please. Somehow, these became very you.'
+      title: '03',
+      message: "You're getting better at this. Three was useful for a while. But now let's make it bigger without adding anything new. Clue: Take my number. Multiply it by itself."
     },
 
     {
-      title: 'A tiny plot twist',
-      message: 'I thought I was just collecting memories. Turns out, I was collecting reasons to smile.'
+      title: '04 The First Door..',
+      message: "1 mystery never hurt anyone..Some things are more fun when you don't know where they're going...So let's start somewhere that definitely isn't the beginning. Clue To Next: Think of a stop sign. How many sides does it have ?"
     },
 
     {
-      title: 'For the reader',
-      message: 'For someone who loves getting lost in a Palace of Illusions, you have a pretty interesting little world of your own.'
+      title: '05',
+      message: "Funny how ten little doors can make you look at numbers completely differently. If you've been paying attention, you might want to look back at the first character of every message you've opened. Don't read them as sentences. Read them as pieces. Clue: You're one door away. Take my number and double it."
     },
 
     {
-      title: 'Something specific',
-      message: 'It’s the little details. The things you probably don’t think anyone notices.'
+      title: '06',
+      message: "And now we're getting somewhere. You weren't supposed to find these in numerical order...You were supposed to find them in the right order. Clue: My number has a very simple next step...Take half of me."
     },
 
     {
-      title: 'This one is suspicious',
-      message: 'I’m not saying you’re secretly the main character… but the evidence is getting stronger.'
+      title: '07',
+      message: "Everything you've opened so far has been saying more than it seems. Maybe you've noticed something. Maybe you haven't. Either way, there's only one way forward. Clue: How many letters are there in the word THREE?"
     },
 
     {
-      title: 'You know this one',
-      message: 'Some references don’t need explanations. If you know, you know.'
+      title: '08',
+      message: "0ne thing I've learnt about puzzles: the obvious answer isn't always the interesting one. You're doing fine. Keep going. Clue: There is exactly one number that is neither prime nor composite."
     },
 
     {
-      title: 'Almost there',
-      message: 'One of the nicest things about knowing someone is slowly discovering all the little things that make them them.'
+      title: '09',
+      message: "Sometimes the answer is much simpler than the question makes it seem. You've made it this far. Don't overthink this one. Clue: How many eyes does a person normally have?"
     },
 
     {
-      title: 'The last one',
-      message: 'Okay. Maybe these weren’t really 10 things I appreciate. Maybe they were just 10 excuses to remind you that you’re pretty special.'
+      title: '10',
+      message: "Take a second. Don't rush this one. Look at the first character of every message, but read them in the order you discovered them. You should have: 1 → 0 → D → A → Y → S → L → E → F → T. Now put the space where it belongs. 10 DAYS LEFT. You weren't opening ten messages. You were assembling one. And if you figured that out before reaching this door... I guess you were paying attention. ✨ Tomorrow: 9."
     }
   ],
 },

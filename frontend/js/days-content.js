@@ -39,7 +39,7 @@ const DAY_CONTENT = {
     caption: "Small thing today. Watch for a second.",
   },
 
-  10: {
+  8: {
     type: 'hidden',
     heading: 'Day 10',
     teaser: 'Click here.',
@@ -58,7 +58,7 @@ const DAY_CONTENT = {
 },
 
 
- 8: {
+ 10: {
   type: 'appreciation',
   heading: 'Day 10',
   intro: 'Some things are meant to be noticed...Some are meant to be discovered...Please start from THE FIRST DOOR',

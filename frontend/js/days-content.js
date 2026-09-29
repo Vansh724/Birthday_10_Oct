@@ -51,9 +51,9 @@ const DAY_CONTENT = {
     heading: 'Day 09',
     intro: 'A few snapshots — replace these placeholders with real photos later.',
     items: [
-    { src: 'images/day11-1.png', caption: 'Real memory here' },
-    { src: 'images/day11-2.png', caption: 'Another memory' },
-    { src: 'images/day11-3.png', caption: 'And another' },
+    { src: 'images/day09-1.png', caption: 'Real memory here' },
+    { src: 'images/day09-2.png', caption: 'Another memory' },
+    { src: 'images/day09-3.png', caption: 'And another' },
   ],
   },
 

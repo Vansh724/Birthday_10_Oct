@@ -58,16 +58,63 @@ const DAY_CONTENT = {
 },
 
 
-  8: {
-    type: 'appreciation',
-    heading: 'Day 8',
-    intro: '10 things, in no particular order:',
-    items: [
-      'Replace this list with 10 real, specific things.',
-      'Specific beats generic — "the way you..." beats "you\'re nice".',
-      '3', '4', '5', '6', '7', '8', '9', '10',
-    ],
-  },
+ 8: {
+  type: 'appreciation',
+  heading: '10 little things',
+  intro: 'Some things are meant to be noticed. Some are meant to be discovered.',
+
+  items: [
+    {
+      title: 'Something you probably don’t realise',
+      message: 'You have this weird ability to make completely ordinary moments feel memorable.'
+    },
+
+    {
+      title: 'You probably forgot this one',
+      message: 'There are tiny things you’ve said or done that stayed with me much longer than you probably expected.'
+    },
+
+    {
+      title: 'Three words',
+      message: 'Sorry. Thank you. Please. Somehow, these became very you.'
+    },
+
+    {
+      title: 'A tiny plot twist',
+      message: 'I thought I was just collecting memories. Turns out, I was collecting reasons to smile.'
+    },
+
+    {
+      title: 'For the reader',
+      message: 'For someone who loves getting lost in a Palace of Illusions, you have a pretty interesting little world of your own.'
+    },
+
+    {
+      title: 'Something specific',
+      message: 'It’s the little details. The things you probably don’t think anyone notices.'
+    },
+
+    {
+      title: 'This one is suspicious',
+      message: 'I’m not saying you’re secretly the main character… but the evidence is getting stronger.'
+    },
+
+    {
+      title: 'You know this one',
+      message: 'Some references don’t need explanations. If you know, you know.'
+    },
+
+    {
+      title: 'Almost there',
+      message: 'One of the nicest things about knowing someone is slowly discovering all the little things that make them them.'
+    },
+
+    {
+      title: 'The last one',
+      message: 'Okay. Maybe these weren’t really 10 things I appreciate. Maybe they were just 10 excuses to remind you that you’re pretty special.'
+    }
+  ],
+},
 
   7: {
     type: 'puzzle',

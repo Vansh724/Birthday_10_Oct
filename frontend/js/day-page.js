@@ -89,12 +89,34 @@ function renderGallery(content, mount) {
 function renderAppreciation(content, mount) {
   mount.innerHTML = `
     <p class="day-intro">${escapeHtml(content.intro)}</p>
+
     <ol class="appreciation-list">
-      ${content.items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+      ${content.items.map((item, i) => `
+        <li class="appreciation-item">
+          
+          <div class="appreciation-title">
+            <span>
+              ${String(i + 1).padStart(2, '0')} — ${escapeHtml(item.title)}
+            </span>
+
+            <span class="appreciation-icon">+</span>
+          </div>
+
+          <div class="appreciation-message">
+            ${escapeHtml(item.message)}
+          </div>
+
+        </li>
+      `).join('')}
     </ol>
   `;
-  mount.querySelectorAll('.appreciation-list li').forEach((li, i) => {
+
+  mount.querySelectorAll('.appreciation-item').forEach((li, i) => {
     li.style.animationDelay = `${i * 0.12}s`;
+
+    li.addEventListener('click', () => {
+      li.classList.toggle('active');
+    });
   });
 }
 

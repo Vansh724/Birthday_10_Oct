@@ -186,15 +186,80 @@
 }
 .gallery-caption { font-size: 0.82rem; color: var(--text-muted); }
 
-/* --- Appreciation list --- */
-.appreciation-list { list-style: none; padding: 0; text-align: left; max-width: 420px; margin: 0 auto; }
-.appreciation-list li {
+.appreciation-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.appreciation-item {
   font-family: var(--sans);
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid rgba(184,164,255,0.12);
   opacity: 0;
   animation: fade-in-up 0.6s ease forwards;
+  cursor: pointer;
+  transition: padding-left 0.3s ease;
 }
+
+.appreciation-item:hover {
+  padding-left: 8px;
+}
+
+.appreciation-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.appreciation-icon {
+  color: var(--accent);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.appreciation-message {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+
+  padding-right: 1.5rem;
+
+  transition:
+    max-height 0.5s ease,
+    opacity 0.4s ease,
+    margin-top 0.4s ease;
+}
+
+.appreciation-item.active .appreciation-message {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.6rem;
+}
+
+.appreciation-item.active .appreciation-icon {
+  transform: rotate(45deg);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }

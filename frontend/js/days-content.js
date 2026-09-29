@@ -111,7 +111,7 @@ const DAY_CONTENT = {
 
     {
       title: '1',
-      message: "Look back at everything you've just opened. Not the card names. Not the riddles. Look at the first character of every message, in the order you discovered them. Then do the same with the answers. You might want to write both down. Last Clue: I represent nothing...I come before one. On a countdown, reaching me means there is nothing left to wait for.."
+      message: "Look back at everything you've just opened. Not the card names. Not the riddles. Look at the first character of every message, in the order you discovered them. Then do the same with the answers you got.. You might want to write both down. Last Clue: I represent nothing...I come before one. On a countdown, reaching me means there is nothing left to wait for..itss a 0..hehe"
     }
   ],
 },

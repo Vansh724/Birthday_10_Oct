@@ -46,7 +46,7 @@ const DAY_CONTENT = {
     reveal: "Replace this with something you've never actually told her.",
   },
 
-  9: {
+  7: {
   type: 'gallery',
   heading: 'Day 09',
   intro: 'A few snapshots — replace these placeholders with real photos later.',
@@ -116,14 +116,75 @@ const DAY_CONTENT = {
   ],
 },
 
-  7: {
-    type: 'puzzle',
-    heading: 'Day 7',
-    prompt: 'Finish this the way you always do:',
-    riddle: '"Replace this with an inside joke or half a sentence only she\'d finish"',
-    answer: 'REPLACE ME',
-    successMessage: "There it is. You knew it immediately, didn't you.",
-  },
+ 9: {
+  type: 'puzzle',
+  heading: 'Day 9',
+
+  questions: [
+    {
+      prompt: 'Finish this the way you always do:',
+      riddle: '"A lil mistake..."',
+      answer: 'SORRY',
+      successMessage: "Yep. You knew that one."
+    },
+
+    {
+      prompt: 'Finish this:',
+      riddle: '"Sorry, thank you and..."',
+      answer: 'PLEASE',
+      successMessage: "The three magical words. 😌"
+    },
+
+    {
+      prompt: 'Complete this:',
+      riddle: '"Get up, go wash your..."',
+      answer: 'FACE',
+      successMessage: "I knew you'd get that one. 😭"
+    },
+
+    {
+      prompt: 'Finish this:',
+      riddle: '"Jaande jaande..."',
+      answer: 'EK GAL SUNDI JAA',
+      successMessage: "Okay, Punjabi expert. 👀"
+    },
+
+    {
+      prompt: 'Complete the reference:',
+      riddle: '"A Palace of..."',
+      answer: 'ILLUSIONS',
+      successMessage: "Obviously. 📖✨"
+    },
+
+    {
+      prompt: 'Finish the joke:',
+      riddle: '"A lil mistake... sorry sorry..."',
+      answer: 'SORRY',
+      successMessage: "You really do have a memory for these things. 😂"
+    },
+
+    {
+      prompt: 'One more:',
+      riddle: '"What follows the frog?"',
+      answer: 'DUCKLINGS',
+      successMessage: "Don't ask me why. You know the story. 🐸"
+    },
+
+    {
+      prompt: 'Finish this:',
+      riddle: '"If you got all the references..."',
+      answer: 'CHOCOLATE',
+      successMessage: "You know what that means. 🍫"
+    },
+
+    {
+      prompt: 'Last one:',
+      riddle: '"How many days are left?"',
+      answer: '9',
+      successMessage: "Exactly. And tomorrow there'll be one less. 👀"
+    }
+  ]
+},
 
   11: {
     type: 'constellation',

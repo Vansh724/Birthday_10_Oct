@@ -124,68 +124,67 @@ const DAY_CONTENT = {
     {
       prompt: 'Finish this the way you always do:',
       riddle: '"A lil mistake..."',
-      answer: 'SORRY',
-      successMessage: "Yep. You knew that one."
+      answer: 'sorry',
+      successMessage: "Obviously. 😭"
     },
 
     {
       prompt: 'Finish this:',
       riddle: '"Sorry, thank you and..."',
-      answer: 'PLEASE',
-      successMessage: "The three magical words. 😌"
+      answer: 'please',
+      successMessage: "The three magical words. ✨"
     },
 
     {
       prompt: 'Complete this:',
       riddle: '"Get up, go wash your..."',
-      answer: 'FACE',
-      successMessage: "I knew you'd get that one. 😭"
+      answer: 'face',
+      successMessage: "You know this one way too well. 😂"
     },
 
     {
       prompt: 'Finish this:',
       riddle: '"Jaande jaande..."',
-      answer: 'EK GAL SUNDI JAA',
+      answer: 'ek gal sundi jaa',
       successMessage: "Okay, Punjabi expert. 👀"
     },
 
     {
-      prompt: 'Complete the reference:',
-      riddle: '"A Palace of..."',
-      answer: 'ILLUSIONS',
-      successMessage: "Obviously. 📖✨"
+      prompt: 'Complete the title:',
+      riddle: '"The Palace of..."',
+      answer: 'Illusions',
+      successMessage: "Obviously. 📖"
     },
 
     {
-      prompt: 'Finish the joke:',
+      prompt: 'Finish this:',
       riddle: '"A lil mistake... sorry sorry..."',
-      answer: 'SORRY',
-      successMessage: "You really do have a memory for these things. 😂"
+      answer: 'sorry',
+      successMessage: "I knew you'd remember that one. 😭"
     },
 
     {
-      prompt: 'One more:',
-      riddle: '"What follows the frog?"',
-      answer: 'DUCKLINGS',
-      successMessage: "Don't ask me why. You know the story. 🐸"
+      prompt: 'Complete the joke:',
+      riddle: '"Why do the ducklings follow the frog?"',
+      answer: 'a lil mistake',
+      successMessage: "Don't ask. You already know. 🐸"
     },
 
     {
       prompt: 'Finish this:',
       riddle: '"If you got all the references..."',
-      answer: 'CHOCOLATE',
-      successMessage: "You know what that means. 🍫"
+      answer: 'chocolate',
+      successMessage: "You know what you just earned. 🍫"
     },
 
     {
-      prompt: 'Last one:',
+      prompt: 'One last thing:',
       riddle: '"How many days are left?"',
       answer: '9',
-      successMessage: "Exactly. And tomorrow there'll be one less. 👀"
+      successMessage: "Exactly. 9. 👀"
     }
   ]
 },
-
   11: {
     type: 'constellation',
     heading: 'Day 11',

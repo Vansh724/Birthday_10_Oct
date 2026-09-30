@@ -121,28 +121,100 @@ function renderAppreciation(content, mount) {
 }
 
 function renderPuzzle(content, mount) {
-  mount.innerHTML = `
-    <p class="day-prompt">${escapeHtml(content.prompt)}</p>
-    <p class="day-riddle">${escapeHtml(content.riddle)}</p>
-    <div class="puzzle-form">
-      <input type="text" id="puzzle-input" class="puzzle-input" aria-label="Your answer" autocomplete="off" />
-      <button class="puzzle-check" id="puzzle-check">Check</button>
-    </div>
-    <p class="puzzle-feedback hidden" id="puzzle-feedback"></p>
-  `;
-  const check = () => {
-    const value = mount.querySelector('#puzzle-input').value.trim().toLowerCase();
+  const questions = content.questions || [{
+    prompt: content.prompt,
+    riddle: content.riddle,
+    answer: content.answer,
+    successMessage: content.successMessage
+  }];
+
+  let currentQuestion = 0;
+
+  function renderQuestion() {
+    const q = questions[currentQuestion];
+
+    mount.innerHTML = `
+      <p class="day-prompt">${escapeHtml(q.prompt)}</p>
+      <p class="day-riddle">${escapeHtml(q.riddle)}</p>
+
+      <div class="puzzle-form">
+        <input
+          type="text"
+          id="puzzle-input"
+          class="puzzle-input"
+          aria-label="Your answer"
+          autocomplete="off"
+        />
+        <button class="puzzle-check" id="puzzle-check">Check</button>
+      </div>
+
+      <p class="puzzle-feedback hidden" id="puzzle-feedback"></p>
+
+      <p class="puzzle-progress">
+        ${currentQuestion + 1} / ${questions.length}
+      </p>
+    `;
+
+    const input = mount.querySelector('#puzzle-input');
+    const checkButton = mount.querySelector('#puzzle-check');
     const feedback = mount.querySelector('#puzzle-feedback');
-    feedback.classList.remove('hidden');
-    if (value === content.answer.trim().toLowerCase()) {
-      feedback.textContent = content.successMessage;
-      feedback.classList.add('puzzle-correct');
-    } else {
-      feedback.textContent = 'Not quite — try again.';
-    }
-  };
-  mount.querySelector('#puzzle-check').addEventListener('click', check);
-  mount.querySelector('#puzzle-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') check(); });
+
+    const check = () => {
+      const value = input.value.trim().toLowerCase();
+
+      if (!value) return;
+
+      feedback.classList.remove('hidden');
+
+      if (value === q.answer.trim().toLowerCase()) {
+        feedback.textContent = q.successMessage;
+        feedback.classList.add('puzzle-correct');
+
+        input.disabled = true;
+        checkButton.disabled = true;
+
+        setTimeout(() => {
+          currentQuestion++;
+
+          if (currentQuestion < questions.length) {
+            renderQuestion();
+          } else {
+            renderFinished();
+          }
+        }, 900);
+
+      } else {
+        feedback.textContent = 'Not quite — try again.';
+      }
+    };
+
+    checkButton.addEventListener('click', check);
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') check();
+    });
+
+    input.focus();
+  }
+
+  function renderFinished() {
+    mount.innerHTML = `
+      <p class="day-prompt">That's all for today. 👀</p>
+
+      <p class="day-riddle">
+        You actually remembered all of those?
+      </p>
+
+      <p class="puzzle-feedback puzzle-correct">
+        ${escapeHtml(
+          content.finalMessage ||
+          "Okay... I think that's enough questions for one day. 😌"
+        )}
+      </p>
+    `;
+  }
+
+  renderQuestion();
 }
 
 function renderConstellation(content, mount) {

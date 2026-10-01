@@ -159,14 +159,14 @@ const DAY_CONTENT = {
     {
       prompt: 'Can you guess the poet... ?',
       riddle: '“The woods are lovely, dark and deep…But I have promises to keep..”',
-      answer: 'Robert Frost',
+      answer: 'robert frost',
       successMessage: "I knew you'd remember that one...its a masterpiece after...Two roads diverged in a wood 😭"
     },
 
     {
       prompt: "Tell me the song....Its not that SRK oneee hehee..Don't use apostrophe",
       riddle: '👠 + 🕛 + 🚫🤴🏻 + 💀 = ?',
-      answer: 'Cinderellas Dead',
+      answer: 'cinderellas dead',
       successMessage: "If no one’s told you this today… you’re doing great... And yes, this is your daily reminder from me..."
     },
 
@@ -174,7 +174,7 @@ const DAY_CONTENT = {
     {
       prompt: 'Thiss One Is Personal...',
       riddle: "Okayy, no thinking too much 👀😂 Whose name would you put next to Best Friend ?",
-      answer: 'Vansh',
+      answer: 'vansh',
       successMessage: "Correct...😌😂 It’s my game, my rules… obviously I get to decide the answer...✨… Attitude ? Haan 😏✨"
     },
 

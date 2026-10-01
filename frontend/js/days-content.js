@@ -183,7 +183,7 @@ const DAY_CONTENT = {
       prompt: 'One lasttt thingy:',
       riddle: "How many days are left...in October 10 ?",
       answer: '9',
-      successMessage: "Exactly...9 days to go..👀"
+      successMessage: "Exactly...9 days to go..Some random Numbers : 29.946695004231646, 76.81568670986067👀"
     }
   ]
 },

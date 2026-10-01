@@ -202,7 +202,7 @@ function renderPuzzle(content, mount) {
       <p class="day-prompt">That's all for today... 👀</p>
 
       <p class="day-riddle">
-       You actually remembered all of those?? 👀😂 If you’ve made it this far, there’s one more thing waiting for you… Stay tuned...
+       You actually remembered all of those?? 👀😂 If you’ve made it this far, maybe there’s one more thing waiting for you… Stay tuned...
 
       </p>
 

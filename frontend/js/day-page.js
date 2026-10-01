@@ -199,16 +199,17 @@ function renderPuzzle(content, mount) {
 
   function renderFinished() {
     mount.innerHTML = `
-      <p class="day-prompt">That's all for today. 👀</p>
+      <p class="day-prompt">That's all for today... 👀</p>
 
       <p class="day-riddle">
-        You actually remembered all of those?
+       You actually remembered all of those?? 👀😂 If you’ve made it this far, there’s one more thing waiting for you… check my WhatsApp About, then go to the latest comment on your first YouTube Short. 👀🔍 You’ll find an interesting little piece of information there..✨
+
       </p>
 
       <p class="puzzle-feedback puzzle-correct">
         ${escapeHtml(
           content.finalMessage ||
-          "Okay... I think that's enough questions for one day. 😌"
+          "Okay... I think that's enough questions for one day...😌😂 Your birthday is getting closer, so I’ll save the rest of the surprises for then...🎂👀 Until that day… a very early Happy Birthday to you...🫶🏻✨"
         )}
       </p>
     `;

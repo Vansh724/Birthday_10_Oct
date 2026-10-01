@@ -118,70 +118,72 @@ const DAY_CONTENT = {
 
  9: {
   type: 'puzzle',
-  heading: 'Day 9',
+  heading: "What if we reverse today’s date? 👀🔄 Let’s see how much you actually remember… because this isn’t a game of knowledge, it’s a game of memory. 🧠🫶🏻",
 
   questions: [
     {
-      prompt: 'Finish this the way you always do:',
-      riddle: '"A lil mistake..."',
-      answer: 'sorry',
-      successMessage: "Obviously. 😭"
+      prompt: 'Finish this the way you always used to do… 🫠',
+      riddle: "Seedha Seedha Raasta Tha… 🛣️ Kisi Se Bhi Na Vaasta Tha… Na Koi Fikar Na Koi Tension… 😌 Main Kaise Bhatak Gaya… 🫠 Raha Na Main Banda Kaam Ka… Jo Bana Main _____ Aapka… ",
+      answer: 'baby',
+      successMessage: "Ohooo…! 😂 Itni jaldi pehchaan liya?...Lagta hai purane records abhi bhi delete nahi hue...👀"
     },
 
     {
-      prompt: 'Finish this:',
-      riddle: '"Sorry, thank you and..."',
-      answer: 'please',
-      successMessage: "The three magical words. ✨"
+      prompt: "I don't know what is thiss.. you can tell if you know.. Hint: Answer is a word..",
+      riddle: "16 - 7 - 12 - 1 - 9 - 20",
+      answer: 'pglait',
+      successMessage: "Jo mai nhi huu...kaha tha na… ek na ek din references mai mil hi jaayega...😂"
     },
 
     {
-      prompt: 'Complete this:',
-      riddle: '"Get up, go wash your..."',
-      answer: 'face',
-      successMessage: "You know this one way too well. 😂"
+      prompt: 'Do you remember...',
+      riddle: 'Would you like a ____? 🍓 Or would you like to jam along? 🎶 Or will bread be enough? 👀',
+      answer: 'jaam',
+      successMessage: "Omgggg, yaad hai...😂 Ek random snap thi… aur dekho, ab iska bhi exam liya jaa rha haai..."
     },
 
     {
-      prompt: 'Finish this:',
-      riddle: '"Jaande jaande..."',
-      answer: 'ek gal sundi jaa',
-      successMessage: "Okay, Punjabi expert. 👀"
+      prompt: 'Heavyy mistakee hogyaa...soryy..',
+      riddle: "What year of college are you in?...Answer is just a number.. 🎓👀",
+      answer: '4',
+      successMessage: "Meanwhile, your YouTube description is still living in the past… “A Sophomore from NIT KKR..” 👀"
     },
 
     {
-      prompt: 'Complete the title:',
-      riddle: '"The Palace of..."',
-      answer: 'Illusions',
-      successMessage: "Obviously. 📖"
+      prompt: 'Okay This One is Easyy..',
+      riddle: "Dhruvi Khandelwal is a ____ ...Born To Rule..",
+      answer: 'queen',
+      successMessage: "I mean it...A Queen or maybe a Kingg :)).. 📖"
     },
 
     {
-      prompt: 'Finish this:',
-      riddle: '"A lil mistake... sorry sorry..."',
-      answer: 'sorry',
-      successMessage: "I knew you'd remember that one. 😭"
+      prompt: 'Can you guess the poet... ?',
+      riddle: '“The woods are lovely, dark and deep…But I have promises to keep..”',
+      answer: 'Robert Frost',
+      successMessage: "I knew you'd remember that one...its a masterpiece after...Two roads diverged in a wood 😭"
     },
 
     {
-      prompt: 'Complete the joke:',
-      riddle: '"Why do the ducklings follow the frog?"',
-      answer: 'a lil mistake',
-      successMessage: "Don't ask. You already know. 🐸"
+      prompt: 'Tell me the song....Its not that SRK oneee hehee',
+      riddle: '👠 + 🕛 + 🚫🤴🏻 + 💀 = ?',
+      answer: 'Cinderella’s Dead',
+      successMessage: "If no one’s told you this today… you’re doing great... And yes, this is your daily reminder from me..."
     },
 
-    {
-      prompt: 'Finish this:',
-      riddle: '"If you got all the references..."',
-      answer: 'chocolate',
-      successMessage: "You know what you just earned. 🍫"
-    },
 
     {
-      prompt: 'One last thing:',
-      riddle: '"How many days are left?"',
+      prompt: 'Thiss One Is Personal...',
+      riddle: "Okayy, no thinking too much 👀😂 Whose name would you put next to Best Friend ?",
+      answer: 'Vansh',
+      successMessage: "Correct...😌😂 It’s my game, my rules… obviously I get to decide the answer...✨… Attitude ? Haan 😏✨"
+    },
+
+
+    {
+      prompt: 'One lasttt thingy:',
+      riddle: "How many days are left...in October 10 ?",
       answer: '9',
-      successMessage: "Exactly. 9. 👀"
+      successMessage: "Exactly...9 days to go..👀"
     }
   ]
 },

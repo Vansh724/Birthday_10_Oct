@@ -119,91 +119,83 @@ function renderAppreciation(content, mount) {
     });
   });
 }
-function renderPuzzle(content, mount) { 
-  const questions = content.questions || [{ 
-    prompt: content.prompt, 
-    riddle: content.riddle, 
-    answer: content.answer, 
-    successMessage: content.successMessage 
-  }]; 
- 
-  let currentQuestion = 0; 
- 
-  function renderQuestion() { 
-    const q = questions[currentQuestion]; 
- 
-    mount.innerHTML = ` 
-      <p class="day-prompt">${escapeHtml(q.prompt)}</p> 
-      <p class="day-riddle">${escapeHtml(q.riddle)}</p> 
- 
-      <div class="puzzle-form"> 
-        <input 
-          type="text" 
-          id="puzzle-input" 
-          class="puzzle-input" 
-          aria-label="Your answer" 
-          autocomplete="off" 
-        /> 
-        <button class="puzzle-check" id="puzzle-check">Check</button> 
-      </div> 
- 
-      <p class="puzzle-feedback hidden" id="puzzle-feedback"></p> 
- 
-      <p class="puzzle-progress"> 
-        ${currentQuestion + 1} / ${questions.length} 
-      </p> 
-    `; 
- 
-    const input = mount.querySelector('#puzzle-input'); 
-    const checkButton = mount.querySelector('#puzzle-check'); 
-    const feedback = mount.querySelector('#puzzle-feedback'); 
- 
-    const check = () => { 
-      const value = input.value.trim().toLowerCase(); 
- 
-      if (!value) return; 
- 
-      feedback.classList.remove('hidden'); 
- 
-      if (value === q.answer.trim().toLowerCase()) { 
-        feedback.textContent = q.successMessage; 
-        feedback.classList.add('puzzle-correct'); 
- 
-        input.disabled = true; 
-        checkButton.disabled = true; 
- 
-        setTimeout(() => { 
-          currentQuestion++; 
- 
-          if (currentQuestion < questions.length) { 
-            renderQuestion(); 
-          } else { 
-            renderFinished(); 
-          } 
-        }, 5000); 
- 
-      } else { 
-        feedback.textContent = 'Not quite — try again.'; 
- 
-        // Wrong answer: stay on the same question
-        // and allow another attempt.
-        input.focus(); 
-        input.select(); 
-      } 
-    }; 
- 
-    checkButton.addEventListener('click', check); 
- 
-    input.addEventListener('keydown', (e) => { 
-      if (e.key === 'Enter') check(); 
-    }); 
- 
-    input.focus(); 
-  }
 
-  // Start the first question
-  renderQuestion();
-}
+function renderPuzzle(content, mount) {
+  const questions = content.questions || [{
+    prompt: content.prompt,
+    riddle: content.riddle,
+    answer: content.answer,
+    successMessage: content.successMessage
+  }];
+
+  let currentQuestion = 0;
+
+  function renderQuestion() {
+    const q = questions[currentQuestion];
+
+    mount.innerHTML = `
+      <p class="day-prompt">${escapeHtml(q.prompt)}</p>
+      <p class="day-riddle">${escapeHtml(q.riddle)}</p>
+
+      <div class="puzzle-form">
+        <input
+          type="text"
+          id="puzzle-input"
+          class="puzzle-input"
+          aria-label="Your answer"
+          autocomplete="off"
+        />
+        <button class="puzzle-check" id="puzzle-check">Check</button>
+      </div>
+
+      <p class="puzzle-feedback hidden" id="puzzle-feedback"></p>
+
+      <p class="puzzle-progress">
+        ${currentQuestion + 1} / ${questions.length}
+      </p>
+    `;
+
+    const input = mount.querySelector('#puzzle-input');
+    const checkButton = mount.querySelector('#puzzle-check');
+    const feedback = mount.querySelector('#puzzle-feedback');
+
+    const check = () => {
+      const value = input.value.trim().toLowerCase();
+
+      if (!value) return;
+
+      feedback.classList.remove('hidden');
+
+      if (value === q.answer.trim().toLowerCase()) {
+        feedback.textContent = q.successMessage;
+        feedback.classList.add('puzzle-correct');
+
+        input.disabled = true;
+        checkButton.disabled = true;
+
+        setTimeout(() => {
+          currentQuestion++;
+
+          if (currentQuestion < questions.length) {
+            renderQuestion();
+          } else {
+            renderFinished();
+          }
+        }, 5000);
+
+      } else {
+        feedback.textContent = 'Not quite — try again.';
+      }
+    };
+
+    checkButton.addEventListener('click', check);
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') check();
+    });
+
+    input.focus();
+  }
 
   function renderFinished() {
     mount.innerHTML = `

@@ -181,7 +181,7 @@ function renderPuzzle(content, mount) {
           } else {
             renderFinished();
           }
-        }, 900);
+        }, 3000);
 
       } else {
         feedback.textContent = 'Not quite — try again.';

@@ -164,9 +164,9 @@ const DAY_CONTENT = {
     },
 
     {
-      prompt: 'Tell me the song....Its not that SRK oneee hehee',
+      prompt: "Tell me the song....Its not that SRK oneee hehee..Don't use apostrophe",
       riddle: '👠 + 🕛 + 🚫🤴🏻 + 💀 = ?',
-      answer: 'Cinderella’s Dead',
+      answer: 'Cinderellas Dead',
       successMessage: "If no one’s told you this today… you’re doing great... And yes, this is your daily reminder from me..."
     },
 

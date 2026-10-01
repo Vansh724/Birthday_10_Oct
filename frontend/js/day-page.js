@@ -119,7 +119,6 @@ function renderAppreciation(content, mount) {
     });
   });
 }
-
 function renderPuzzle(content, mount) { 
   const questions = content.questions || [{ 
     prompt: content.prompt, 
@@ -185,8 +184,9 @@ function renderPuzzle(content, mount) {
  
       } else { 
         feedback.textContent = 'Not quite — try again.'; 
-        
-        // Keep the same question active so another attempt is possible
+ 
+        // Wrong answer: stay on the same question
+        // and allow another attempt.
         input.focus(); 
         input.select(); 
       } 
@@ -200,7 +200,8 @@ function renderPuzzle(content, mount) {
  
     input.focus(); 
   }
- 
+
+  // Start the first question
   renderQuestion();
 }
 

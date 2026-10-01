@@ -164,22 +164,14 @@ function renderPuzzle(content, mount) {
 
       if (!value) return;
 
-      // CORRECT ANSWER
-      if (value === q.answer.trim().toLowerCase()) {
-        feedback.classList.remove('hidden');
-        feedback.classList.remove('puzzle-wrong');
-        feedback.classList.add('puzzle-correct');
-        feedback.textContent = q.successMessage;
+      feedback.classList.remove('hidden');
 
-        // Lock only after correct answer
+      if (value === q.answer.trim().toLowerCase()) {
+        feedback.textContent = q.successMessage;
+        feedback.classList.add('puzzle-correct');
+
         input.disabled = true;
         checkButton.disabled = true;
-
-        // 2.5 sec between questions, 4.5 sec after Q9
-        const delay =
-          currentQuestion === questions.length - 1
-            ? 15000
-            : 5000;
 
         setTimeout(() => {
           currentQuestion++;
@@ -189,44 +181,21 @@ function renderPuzzle(content, mount) {
           } else {
             renderFinished();
           }
-        }, delay);
+        }, 5000);
 
-      // WRONG ANSWER
       } else {
-        feedback.classList.remove('hidden');
-        feedback.classList.remove('puzzle-correct');
-        feedback.classList.add('puzzle-wrong');
-        feedback.textContent = 'Not quite — try again. 👀';
-
-        // IMPORTANT:
-        // Do NOT disable the input/button.
-        // The same question remains on screen.
-
-        input.focus();
-        input.select();
-
-        // Clear the error message after a moment,
-        // but keep the question active.
-        setTimeout(() => {
-          feedback.classList.add('hidden');
-          feedback.classList.remove('puzzle-wrong');
-        }, 1200);
+        feedback.textContent = 'Not quite — try again.';
       }
     };
 
     checkButton.addEventListener('click', check);
 
     input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        check();
-      }
+      if (e.key === 'Enter') check();
     });
 
     input.focus();
   }
-
-  renderQuestion();
-}
 
   function renderFinished() {
     mount.innerHTML = `

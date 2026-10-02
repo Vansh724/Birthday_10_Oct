@@ -80,8 +80,8 @@ function renderHidden(content, mount) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>${escapeHtml(content.buttonText || 'Open it')}</span>
-              <span class="reveal-arrow">✦</span>
+              <span>${escapeHtml(content.buttonText || 'Open it 👀')}</span>
+              <span class="reveal-arrow">→</span>
             </a>
           `
           : ''
@@ -95,6 +95,8 @@ function renderHidden(content, mount) {
     e.target.style.display = 'none';
   });
 }
+
+ 
 
 function renderGallery(content, mount) {
   mount.innerHTML = `

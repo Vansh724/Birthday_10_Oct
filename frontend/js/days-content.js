@@ -41,9 +41,9 @@ const DAY_CONTENT = {
 
   8: {
   type: 'hidden',
-  heading: 'One Last Thing 🌙',
+  heading: 'Today is the 2nd of October, and there are 8 days left… 👀✨ And guess what? 2 + 8 = 10. 🫣🎂',
   teaser: 'There might be something waiting for you here...',
-  reveal: 'Okay… this one is a little different. Some things are better discovered than explained. So instead of leaving another message here, I made something for you. ✨ If you’ve made it this far, I think you deserve to see it.',
+  reveal: 'Okay… this one is a little different. Some things are better discovered than explained. So instead of leaving another message here, I made something for you...✨ If you’ve made it this far, I think you deserve to see it...',
   buttonText: 'I wonder what it is 👀',
   buttonUrl: 'https://nurture-memories.vercel.app',
 },

@@ -61,9 +61,32 @@ function renderAnimation(content, mount) {
 
 function renderHidden(content, mount) {
   mount.innerHTML = `
-    <button class="reveal-btn" id="reveal-btn">${escapeHtml(content.teaser)}</button>
-    <p class="hidden-text hidden" id="hidden-text">${escapeHtml(content.reveal)}</p>
+    <button class="reveal-btn" id="reveal-btn">
+      ${escapeHtml(content.teaser)}
+    </button>
+
+    <div class="hidden-text hidden" id="hidden-text">
+      <p class="hidden-message">
+        ${escapeHtml(content.reveal)}
+      </p>
+
+      ${
+        content.buttonUrl
+          ? `
+            <a
+              class="reveal-link"
+              href="${escapeHtml(content.buttonUrl)}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ${escapeHtml(content.buttonText || 'Open it 👀')}
+            </a>
+          `
+          : ''
+      }
+    </div>
   `;
+
   mount.querySelector('#reveal-btn').addEventListener('click', (e) => {
     mount.querySelector('#hidden-text').classList.remove('hidden');
     e.target.style.display = 'none';

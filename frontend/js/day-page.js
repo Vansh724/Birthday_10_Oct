@@ -66,6 +66,7 @@ function renderHidden(content, mount) {
     </button>
 
     <div class="hidden-text hidden" id="hidden-text">
+
       <p class="hidden-message">
         ${escapeHtml(content.reveal)}
       </p>
@@ -79,11 +80,13 @@ function renderHidden(content, mount) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ${escapeHtml(content.buttonText || 'Open it 👀')}
+              <span>${escapeHtml(content.buttonText || 'Open it')}</span>
+              <span class="reveal-arrow">✦</span>
             </a>
           `
           : ''
       }
+
     </div>
   `;
 

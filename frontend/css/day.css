@@ -143,18 +143,128 @@
 }
 
 /* --- Hidden reveal --- */
+/* --- Hidden reveal --- */
+
 .reveal-btn {
   font-family: var(--sans);
-  background: none;
-  border: 1px solid var(--accent-soft);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  background: linear-gradient(
+    135deg,
+    rgba(184,164,255,0.14),
+    rgba(255,182,217,0.12)
+  );
+  border: 1px solid rgba(184,164,255,0.45);
   color: var(--accent);
-  padding: 0.8rem 1.8rem;
+  padding: 1rem 2.2rem;
   border-radius: 999px;
   cursor: pointer;
-  transition: background 0.25s ease;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.15),
+    0 0 25px rgba(184,164,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
-.reveal-btn:hover { background: rgba(184,164,255,0.1); }
-.hidden-text { font-family: var(--serif); font-size: 1.2rem; color: var(--text); margin-top: 1rem; }
+
+.reveal-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+
+  background: linear-gradient(
+    135deg,
+    rgba(184,164,255,0.24),
+    rgba(255,182,217,0.2)
+  );
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,0.2),
+    0 0 35px rgba(184,164,255,0.18);
+}
+
+.hidden-text {
+  margin-top: 2.5rem;
+  text-align: center;
+  animation: reveal-message 0.9s ease forwards;
+}
+
+.hidden-message {
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  line-height: 1.75;
+  color: var(--text);
+
+  max-width: 650px;
+  margin: 0 auto 2.2rem;
+
+  letter-spacing: 0.015em;
+}
+
+.reveal-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+
+  color: var(--text);
+  text-decoration: none;
+
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.22);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.15),
+    0 0 20px rgba(255,255,255,0.05);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.reveal-link:hover {
+  transform: translateY(-3px) scale(1.04);
+
+  background: rgba(255,255,255,0.13);
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,0.2),
+    0 0 30px rgba(255,255,255,0.1);
+}
+
+.reveal-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.reveal-link:hover .reveal-arrow {
+  transform: translate(3px, -3px);
+}
+
+@keyframes reveal-message {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* --- Gallery --- */
 .gallery-grid {

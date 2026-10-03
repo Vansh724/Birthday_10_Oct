@@ -34,10 +34,22 @@ const DAY_CONTENT = {
   },
 
   6: {
-    type: 'animation',
-    heading: 'Day 11',
-    caption: "Small thing today. Watch for a second.",
-  },
+  type: 'choice',
+  heading: 'Day 06',
+  question: 'Do you want to see what I made for today?',
+  options: [
+    {
+      label: 'Yes, I’m curious 👀',
+      response: "Good. I was hoping you'd pick this one.",
+      action: 'continue',
+    },
+    {
+      label: 'I’ll come back later 🙃',
+      response: "Excuse me?? That's not how this works. 😭",
+      action: 'plea',
+    },
+  ],
+},
 
  
 7: {

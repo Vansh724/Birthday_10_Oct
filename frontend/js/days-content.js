@@ -39,16 +39,38 @@ const DAY_CONTENT = {
     caption: "Small thing today. Watch for a second.",
   },
 
-  8: {
+ 
+7: {
   type: 'hidden',
-  heading: 'Today is the 2nd of October, and there are 8 days left… 👀✨ And guess what? 2 + 8 = 10. 🫣🎂',
-  teaser: 'There might be something waiting for you here...',
-  reveal: 'Okay… this one is a little different. Some things are better discovered than explained. So instead of leaving another message here, I made something for you...✨ If you’ve made it this far, I think you deserve to see it...',
-  buttonText: 'I wonder what it is 👀',
-  buttonUrl: 'https://nurture-memories.vercel.app',
+
+  heading:
+    'Today is the 3rd of October, and there are 7 days left… 👀✨ And honestly, 7 is kind of everywhere...7 colours in a rainbow 🌈, 7 sur in music 🎶, 7 days in a week 📅, 7 continents on Earth 🌍, 7 seas 🌊, 7 wonders of the world 🏛️, and even the lucky number 7 🍀.',
+
+  teaser:
+    'Coincidence? Maybe. 👀 Or maybe there is a reason seven keeps showing up today… ✨',
+
+  reveal:
+    'Seven colours make a rainbow. 🌈\n\n' +
+    'Seven sur make a melody. 🎶\n\n' +
+    'Seven days make a week. 📅\n\n' +
+    'Seven continents make our world a little bigger. 🌍\n\n' +
+    'Seven seas make it a little more mysterious. 🌊\n\n' +
+    'Seven wonders give us something to look at in awe. ✨\n\n' +
+    'And apparently, seven is also enough to hide something rather special. 👀\n\n' +
+    'Because today, there are seven doors waiting for you. 🚪🚪🚪🚪🚪🚪🚪\n\n' +
+    'I could tell you what is behind them… but then they wouldn’t be much of a surprise, would they? 😌\n\n' +
+    'So go on. Open them one by one. And maybe, by the end, you’ll understand why today had to be seven. 🤍✨',
+
+  buttonText:
+    'Seven doors...Let’s see what happens. 👀',
+
+  buttonUrl:
+    'https://pixel-perfect-showcase-1731-upei.vercel.app/',
 },
 
-  7: {
+
+
+  8: {
   type: 'gallery',
   heading: 'Day 09',
   intro: 'A few snapshots — replace these placeholders with real photos later.',

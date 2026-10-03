@@ -70,7 +70,7 @@ const DAILY_MESSAGES = [
     date: '2026-10-03',
     dayNumber: 7,
     title: 'Day 7',
-    message: 'A tiny puzzle for you. No pressure to solve it fast.',
+    message: 'A tiny puzzle for you. No pressure to solve it fast..',
     url: '/day/7',
   },
   {

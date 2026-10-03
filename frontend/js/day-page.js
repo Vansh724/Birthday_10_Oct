@@ -92,7 +92,7 @@ function showDay06Plea(mount) {
     <div class="day06-overlay">
       <div class="day06-modal">
 
-        <h2>Wait. Excuse me. 😭</h2>
+        <h2>Wait..Excuse me. 😭</h2>
 
         <p>
           You can't just ignore today's one.
@@ -103,7 +103,7 @@ function showDay06Plea(mount) {
         </p>
 
         <p>
-          So please…<br>
+          So please…
           <strong>don't make me beg. 🥲</strong>
         </p>
 

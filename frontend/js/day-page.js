@@ -88,7 +88,7 @@ function renderChoice(content, mount) {
 }
 
 function showDay06Plea(mount) {
-  mount.innerHTML = `
+  mount.innerHTML = 
     <div class="day06-overlay">
       <div class="day06-modal">
 
@@ -113,7 +113,7 @@ function showDay06Plea(mount) {
 
       </div>
     </div>
-  `;
+  ;
 
   mount
     .querySelector('#day06-show-btn')

@@ -35,8 +35,7 @@ const DAY_CONTENT = {
 
   6: {
   type: 'choice',
-  heading: 'Day 06',
-  heading: `A hexagon has 6 sides.
+  heading: `Day 06: A hexagon has 6 sides.
 
 A dice has 6 faces.
 

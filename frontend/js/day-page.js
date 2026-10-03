@@ -35,25 +35,18 @@ function renderMemory(content, mount) {
 function renderChoice(content, mount) {
   mount.innerHTML = `
     <p class="day-prompt">${escapeHtml(content.question)}</p>
-
     <div class="choice-buttons">
-      ${content.options
-        .map(
-          (opt, i) =>
-            `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`
-        )
-        .join('')}
+      ${content.options.map((opt, i) => `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`).join('')}
     </div>
-
     <p class="choice-response hidden" id="choice-response"></p>
 
     <div id="choice-next" class="hidden"></div>
   `;
-
   mount.querySelectorAll('.choice-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const opt = content.options[Number(btn.dataset.i)];
       const responseEl = mount.querySelector('#choice-response');
+<<<<<<< HEAD
       const nextEl = mount.querySelector('#choice-next');
 
       responseEl.textContent = opt.response;
@@ -94,6 +87,12 @@ function renderChoice(content, mount) {
 
         nextEl.classList.remove('hidden');
       }
+=======
+      responseEl.textContent = opt.response;
+      responseEl.classList.remove('hidden');
+      mount.querySelectorAll('.choice-btn').forEach((b) => (b.disabled = true));
+      btn.classList.add('choice-selected');
+>>>>>>> 4963bfc920a893d2cc88c28c1da188c9e7b8c5c6
     });
   });
 }

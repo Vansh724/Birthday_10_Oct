@@ -35,98 +35,22 @@ function renderMemory(content, mount) {
 function renderChoice(content, mount) {
   mount.innerHTML = `
     <p class="day-prompt">${escapeHtml(content.question)}</p>
-
     <div class="choice-buttons">
-      ${content.options
-        .map(
-          (opt, i) =>
-            `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`
-        )
-        .join('')}
+      ${content.options.map((opt, i) => `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`).join('')}
     </div>
-
     <p class="choice-response hidden" id="choice-response"></p>
   `;
-
   mount.querySelectorAll('.choice-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const opt = content.options[Number(btn.dataset.i)];
       const responseEl = mount.querySelector('#choice-response');
-
-      // Disable both choices after selection
-      mount
-        .querySelectorAll('.choice-btn')
-        .forEach((b) => (b.disabled = true));
-
-      btn.classList.add('choice-selected');
-
-      // Show the selected response
       responseEl.textContent = opt.response;
       responseEl.classList.remove('hidden');
-
-      // -----------------------------------------
-      // DAY 06 CUSTOM FLOW
-      // -----------------------------------------
-
-      if (opt.action === 'plea') {
-        setTimeout(() => {
-          showDay06Plea(mount);
-        }, 900);
-
-        return;
-      }
-
-      if (opt.action === 'continue') {
-        setTimeout(() => {
-          showDay06LaptopScreen(mount);
-        }, 900);
-
-        return;
-      }
+      mount.querySelectorAll('.choice-btn').forEach((b) => (b.disabled = true));
+      btn.classList.add('choice-selected');
     });
   });
 }
-
-function showDay06Plea(mount) {
-  mount.innerHTML = 
-    <div class="day06-overlay">
-      <div class="day06-modal">
-
-        <h2>Wait..Excuse me. 😭</h2>
-
-        <p>
-          You can't just ignore today's one.
-        </p>
-
-        <p>
-          I actually made this for you.
-        </p>
-
-        <p>
-          So please…
-          <strong>don't make me beg. 🥲</strong>
-        </p>
-
-        <button class="day06-primary-btn" id="day06-show-btn">
-          Okay okay, show me →
-        </button>
-
-      </div>
-    </div>
-  ;
-
-  mount
-    .querySelector('#day06-show-btn')
-    .addEventListener('click', () => {
-      showDay06LaptopScreen(mount);
-    });
-}
-function openDay06() {
-  window.location.href = 'https://yourworld-seven.vercel.app/';
-}
-
-
-
 
 function renderAnimation(content, mount) {
   mount.innerHTML = `

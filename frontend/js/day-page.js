@@ -35,19 +35,65 @@ function renderMemory(content, mount) {
 function renderChoice(content, mount) {
   mount.innerHTML = `
     <p class="day-prompt">${escapeHtml(content.question)}</p>
+
     <div class="choice-buttons">
-      ${content.options.map((opt, i) => `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`).join('')}
+      ${content.options
+        .map(
+          (opt, i) =>
+            `<button class="choice-btn" data-i="${i}">${escapeHtml(opt.label)}</button>`
+        )
+        .join('')}
     </div>
+
     <p class="choice-response hidden" id="choice-response"></p>
+
+    <div id="choice-next" class="hidden"></div>
   `;
+
   mount.querySelectorAll('.choice-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const opt = content.options[Number(btn.dataset.i)];
       const responseEl = mount.querySelector('#choice-response');
+      const nextEl = mount.querySelector('#choice-next');
+
       responseEl.textContent = opt.response;
       responseEl.classList.remove('hidden');
-      mount.querySelectorAll('.choice-btn').forEach((b) => (b.disabled = true));
+
+      mount.querySelectorAll('.choice-btn').forEach((b) => {
+        b.disabled = true;
+      });
+
       btn.classList.add('choice-selected');
+
+      // YES
+      if (opt.action === 'continue') {
+        nextEl.innerHTML = `
+          <p class="day-prompt">
+            For the best experience, open this one on your laptop. 💻
+          </p>
+
+          <button class="choice-btn" id="day06-next">
+            ENTER DAY 06 →
+          </button>
+        `;
+
+        nextEl.classList.remove('hidden');
+
+        mount.querySelector('#day06-next').addEventListener('click', () => {
+          window.location.href = 'https://yourworld-seven.vercel.app/';
+        });
+      }
+
+      // NO
+      if (opt.action === 'plea') {
+        nextEl.innerHTML = `
+          <p class="day-prompt">
+            Please don't ignore today's one. 🥲
+          </p>
+        `;
+
+        nextEl.classList.remove('hidden');
+      }
     });
   });
 }

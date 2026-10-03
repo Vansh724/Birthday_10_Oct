@@ -45,7 +45,7 @@ const DAY_CONTENT = {
     },
     {
       label: 'I’ll come back later 🙃',
-      response: "Excuse me?? That's not how this works. 😭",
+      response: "Aww, please don't. 🥲",
       action: 'plea',
     },
   ],

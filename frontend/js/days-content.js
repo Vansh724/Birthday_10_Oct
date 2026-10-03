@@ -36,16 +36,27 @@ const DAY_CONTENT = {
   6: {
   type: 'choice',
   heading: 'Day 06',
+  teaser: `A hexagon has 6 sides.
+
+A dice has 6 faces.
+
+A guitar has 6 strings.
+
+And today…
+
+there are 6 days left until your birthday.
+
+Apparently 6 is having a pretty good day. 😂`,
   question: 'Do you want to see what I made for today?',
   options: [
     {
-      label: 'Yes, I’m curious 👀',
-      response: "Good. I was hoping you'd pick this one.",
+      label: 'Yesss, I’m curious.. 👀',
+      response: "Good Good..I was hoping you'd pick this one..",
       action: 'continue',
     },
     {
       label: 'I’ll come back later 🙃',
-      response: "Aww, please don't. 🥲",
+      response: "Aww, please don't do thisssss.. 🥲",
       action: 'plea',
     },
   ],

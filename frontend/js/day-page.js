@@ -46,7 +46,6 @@ function renderChoice(content, mount) {
     btn.addEventListener('click', () => {
       const opt = content.options[Number(btn.dataset.i)];
       const responseEl = mount.querySelector('#choice-response');
-<<<<<<< HEAD
       const nextEl = mount.querySelector('#choice-next');
 
       responseEl.textContent = opt.response;
@@ -87,12 +86,6 @@ function renderChoice(content, mount) {
 
         nextEl.classList.remove('hidden');
       }
-=======
-      responseEl.textContent = opt.response;
-      responseEl.classList.remove('hidden');
-      mount.querySelectorAll('.choice-btn').forEach((b) => (b.disabled = true));
-      btn.classList.add('choice-selected');
->>>>>>> 4963bfc920a893d2cc88c28c1da188c9e7b8c5c6
     });
   });
 }

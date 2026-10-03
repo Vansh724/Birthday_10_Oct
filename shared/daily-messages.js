@@ -77,7 +77,7 @@ const DAILY_MESSAGES = [
     date: '2026-10-04',
     dayNumber: 6,
     title: 'Day 6 🌙',
-    message: 'I made you a constellation. Some stars have words in them.',
+    message: 'Somewhere today, a little world is waiting for you.. 🌎✨',
     url: '/day/6',
   },
   {

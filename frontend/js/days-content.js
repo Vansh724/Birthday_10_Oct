@@ -239,15 +239,13 @@ Apparently 6 is having a pretty good day. 😂`,
   },
 
   5: {
-    type: 'timeline',
-    heading: 'Day 5',
-    intro: 'A short walk through how we got here — replace these with real ones.',
-    milestones: [
-      { label: 'How we met', detail: 'Replace with the real story, briefly.' },
-      { label: 'A turning point', detail: 'Replace with a real moment.' },
-      { label: 'Now', detail: 'Replace with where things are today.' },
-    ],
-  },
+ type: 'hidden',
+  heading: '5 days to go… but there’s something about today that keeps pointing to 10...👀🎂✨',
+  teaser: 'Five days left… and this time, there’s a little story waiting for you... 👀✨',
+  reveal: 'Okay… this one is a little different. Some things are better discovered than explained. So instead of leaving another message here, I made something for you...✨ If you’ve made it this far, I think you deserve to see it...',
+  buttonText: 'I wonder what it is..👀',
+  buttonUrl: 'https://pixel-perfect-showcase-0009.vercel.app',
+},
 
   4: {
     type: 'music',

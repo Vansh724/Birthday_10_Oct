@@ -91,7 +91,7 @@ const DAILY_MESSAGES = [
     date: '2026-10-06',
     dayNumber: 4,
     title: 'Day 4',
-    message: "A song made me think of you today. I'll show you which one.",
+    message: "Something starts today...You won't need to check - just wait.",
     url: '/day/4',
   },
   {

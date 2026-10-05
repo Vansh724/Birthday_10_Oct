@@ -3,7 +3,7 @@
 A small, private digital experience: she visits once, allows notifications,
 and then receives one message a day until her birthday on 10 October 2026.
 
-This README grows as we build each stage.
+This README grows as we build each stage.....
 
 ## Where things stand tall
 

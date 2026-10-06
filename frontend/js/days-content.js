@@ -247,15 +247,14 @@ Apparently 6 is having a pretty good day. 😂`,
   buttonUrl: 'https://pixel-perfect-showcase-0009.vercel.app',
 },
 
-  4: {
-    type: 'music',
-    heading: 'Day 4',
-    intro: 'A song made me think of you today.',
-    songTitle: 'Replace with a real song title',
-    songArtist: 'Replace with the artist',
-    note: "Replace with why this song, specifically.",
-    link: '',
-  },
+ 4: {
+ type: 'hidden',
+  heading: '4 days to go… and today, the way forward might not be as simple as it looks. 🚂👀✨',
+  teaser: 'The next memory is already waiting somewhere ahead..👀✨',
+  reveal: 'Okay… this one is a little different. I didn’t leave you another message this time… I left you a journey. 🚂✨ Take your time, watch the windows, notice the little things, and see where the memories take you… 👀🌙 Disclaimer: PLEASE USE A LAPTOP AND HEADPHONES 🎧',
+  buttonText: 'Find your way forward…',
+  buttonUrl: 'https://pixel-perfect-capture-2443.vercel.app',
+},
 
   3: {
     type: 'note',

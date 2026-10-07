@@ -257,9 +257,12 @@ Apparently 6 is having a pretty good day. 😂`,
 },
 
   3: {
-    type: 'note',
-    heading: 'Day 3',
-    note: "Replace this whole paragraph with something written in your own voice, like a note you'd actually hand her.",
+   type: 'hidden',
+  heading: '3 Days to go...Clock is Ticking...',
+  teaser: 'The next memory is waiting somewhere for you..👀✨',
+  reveal: 'Today No Riddle, No Laptop or headphones needed :))',
+  buttonText: 'lick Me',
+  buttonUrl: 'https://pixel-perfect-clone-ochre.vercel.app/',
   },
 
   2: {

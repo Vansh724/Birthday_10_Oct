@@ -261,7 +261,7 @@ Apparently 6 is having a pretty good day. 😂`,
   heading: '3 Days to go...Clock is Ticking...',
   teaser: 'The next memory is waiting somewhere for you..👀✨',
   reveal: 'Today No Riddle, No Laptop or headphones needed :))',
-  buttonText: 'lick Me',
+  buttonText: 'Click Me',
   buttonUrl: 'https://pixel-perfect-clone-ochre.vercel.app/',
   },
 

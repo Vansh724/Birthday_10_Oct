@@ -11,9 +11,15 @@
 
 const DAY_CONTENT = {
   14: {
-    type: 'intro',
-    heading: 'Day 14',
-    body: "This is the first of fourteen little pages. Each one unlocks with tomorrow's notification — you don't need to come looking for them. Today's just here to say: it's really started.",
+   type: 'hidden',
+ heading: '2 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
+
+teaser: 'Something has gone missing... and the clues are waiting for you to find them. 👀✨',
+
+reveal: 'Today, you are the detective. No riddles. No headphones. Just follow the evidence...',
+
+buttonText: 'Open the Case',
+  buttonUrl: 'https://case-unfolded.vercel.app/',
   },
 
   12: {

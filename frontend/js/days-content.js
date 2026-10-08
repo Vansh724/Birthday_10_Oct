@@ -266,12 +266,15 @@ Apparently 6 is having a pretty good day. 😂`,
   },
 
   2: {
-    type: 'game',
-    heading: 'Day 2',
-    prompt: 'Find the one that doesn\'t belong.',
-    items: ['🌙', '⭐', '🌙', '🌙', '🌙'],
-    correctIndex: 1,
-    successMessage: "Found it. I owe you something for that — I'll figure out what.",
+    type: 'hidden',
+ heading: '2 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
+
+teaser: 'Something has gone missing... and the clues are waiting for you to find them. 👀✨',
+
+reveal: 'Today, you are the detective. No riddles. No headphones. Just follow the evidence...',
+
+buttonText: 'Open the Case',
+  buttonUrl: 'https://case-unfolded.vercel.app/',
   },
 
   1: {

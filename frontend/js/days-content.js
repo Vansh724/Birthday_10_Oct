@@ -10,7 +10,7 @@
  */
 
 const DAY_CONTENT = {
-  14: {
+  13: {
    type: 'hidden',
  heading: '2 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
 
@@ -29,7 +29,7 @@ buttonText: 'Open the Case',
     memory: "Humre gola par it's a rule to celebrate best friends early! I genuinely loved this message enough to let it go all the way to your planet... Happy 12 days to your birthday!🛸",
   },
 
-  13: {
+  14: {
     type: 'choice',
     heading: 'Day 13',
     question: 'Pick one, honestly:',

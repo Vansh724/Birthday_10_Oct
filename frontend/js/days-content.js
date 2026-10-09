@@ -12,7 +12,7 @@
 const DAY_CONTENT = {
   13: {
    type: 'hidden',
- heading: '2 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
+ heading: '13 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
 
 teaser: 'Something has gone missing... and the clues are waiting for you to find them. 👀✨',
 
@@ -31,7 +31,7 @@ buttonText: 'Open the Case',
 
   14: {
     type: 'choice',
-    heading: 'Day 13',
+    heading: 'Day 14',
     question: 'Pick one, honestly:',
     options: [
       { label: 'Coffee', response: "Good — that's what I'd have guessed." },

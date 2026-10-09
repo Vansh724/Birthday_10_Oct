@@ -273,14 +273,14 @@ Apparently 6 is having a pretty good day. 😂`,
 
   2: {
     type: 'hidden',
- heading: '2 Days to go..for the Dhruvi DAY... A Case Has Been Opened... 🕵🏻‍♀️🗝️',
+heading: '2 Days to go… Before Dhruvi DAY, Let’s Rewind the Universe… 🌌✨',
 
-teaser: 'Something has gone missing... and the clues are waiting for you to find them. 👀✨',
+teaser: 'From a tiny spark to a world full of life… the universe has a story to tell.. 👀🌍',
 
-reveal: 'Today, you are the detective. No riddles. No headphones. Just follow the evidence...',
+reveal: 'Just a journey through 13.8 billion years of cosmic magic. And somewhere along the way, this universe has a little surprise with your name on it… :)) 💫',
 
-buttonText: 'Open the Case',
-  buttonUrl: 'https://case-unfolded.vercel.app/',
+buttonText: 'Click Me !!',
+  buttonUrl: 'https://pixel-perfect-clone-5a9f4f10.vercel.app/day-02',
   },
 
   1: {

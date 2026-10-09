@@ -284,9 +284,14 @@ buttonText: 'Click Me !!',
   },
 
   1: {
-    type: 'locked',
-    heading: 'Day 1',
-    lockedHint: 'Tap to unlock.',
-    message: "One day left. Whatever you're doing tomorrow, keep some room in it — I have something for you.",
+ type: 'hidden',
+heading: '1 DAY TO GO....',
+
+teaser: 'A VERY VERY HAPPY BIRTHDAY IN ADVANCE DHRUVI...',
+
+reveal: 'ITS NOT ABOUT ANIMATION OR 3D...ITS ABOUT SIMPLICITY...',
+
+buttonText: 'Click Me !!',
+  buttonUrl: 'https://pixel-perfect-replica-ten-rho.vercel.app/',
   },
 };
